@@ -549,6 +549,10 @@
       <div class="prompt-body">RGN2단위로 2026년 3월 대비 4월 주문수가 가장 급등한 지역 TOP 5를 알려줘. 그리고 예상되는 원인도 분석해줘.</div>
     </div>
     <p style="font-size:0.85rem;color:var(--text-muted);">터미널 명령어 없음. 자연어 한 번만 입력하면 끝.</p>
+
+    <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:10px;padding:1.25rem 1.5rem;margin-top:1.25rem;">
+      <p style="font-size:1.15rem;font-weight:700;color:var(--primary);margin:0;line-height:1.6;">💡 MCP 허브가 연결되어 있다면, 꼭 Claude Code가 아니어도<br/>Claude 챗이나 코워크에서도 답변을 얻을 수 있습니다.</p>
+    </div>
   </div>
 
   <!-- p8-9: 핵심 4개 & MCP -->
@@ -974,6 +978,8 @@
     </ul>
 
     <h3>📊 시트는 레포트가 아닌 데이터베이스용</h3>
+    <img src="images/slide-sheet-data.png" alt="스프레드시트 데이터 예시" style="width:100%;border-radius:10px;margin:0.75rem 0;border:1px solid var(--border);">
+    <img src="images/slide-sheet-vs-wiki.png" alt="전통적인 시트 vs Atlassian WIKI 비교" style="width:100%;border-radius:10px;margin:0.75rem 0;border:1px solid var(--border);">
     <p>스프레드시트는 행과 열의 기준이 계속 달라져 AI가 파악하기 어렵습니다. 데이터는 <strong>행과 열이 동일한 기준</strong>을 가질 때 AI가 읽기 쉽습니다.</p>
 
     <h3>✅ 파이프라인 구축 성공 사례</h3>
@@ -1029,6 +1035,8 @@
       <div class="callout-label">🔗 Atlassian MCP 활용 팁</div>
       Atlassian MCP를 활용하면 Confluence, Jira 등 최신 문서를 Claude가 직접 읽어 <strong>업무 맥락을 정확하게 이해</strong>합니다. 복수의 최신 문서를 통해 AI가 상황을 파악하게 하세요.
     </div>
+    <img src="images/slide-atlassian-mcp.png" alt="Atlassian MCP 프롬프트 예시" style="width:100%;border-radius:10px;margin:0.75rem 0;border:1px solid var(--border);">
+
 
     <div class="callout info">
       <div class="callout-label">🧩 Quiz</div>
@@ -1038,6 +1046,9 @@
 
     <h3>📄 맥락은 MD 형식으로 전달</h3>
     <p>스프레드시트를 복사·붙여넣기로 주면 AI가 정보를 제대로 파악하기 어렵습니다. <strong>Markdown(MD) 형식</strong>으로 변환해서 주면 AI가 훨씬 정확하게 이해합니다.</p>
+    <img src="images/slide-sheet-to-md1.png" alt="시트 to MD 변환 예시 1" style="width:100%;border-radius:10px;margin:0.75rem 0;border:1px solid var(--border);">
+    <img src="images/slide-sheet-to-md2.png" alt="시트 to MD 변환 예시 2" style="width:100%;border-radius:10px;margin:0.75rem 0;border:1px solid var(--border);">
+
 
     <h3>🤔 좋은 프롬프트 자체를 AI에게 물어보기</h3>
     <div class="prompt-block">
@@ -1053,6 +1064,8 @@
 
     <h3>🔍 쿼리를 시킬 때도 맥락 주기</h3>
     <p>Trino가 연결되어 있어도 AI가 데이터 구조를 모르면 틀립니다. <strong>자주 쓰는 데이터 스키마, 테이블, 예시 쿼리를 MD로 정리해서 전달</strong>하면 정합성이 크게 올라갑니다.</p>
+    <img src="images/context_page 30.png" alt="쿼리 맥락 예시" style="width:100%;border-radius:10px;margin:0.75rem 0;border:1px solid var(--border);">
+
   </div>
 
   <!-- 라이트닝 토크 -->
