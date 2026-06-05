@@ -1069,9 +1069,9 @@
     <div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;margin:1rem 0;">
       <button onclick="toggleDict(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;background:var(--bg-card);border:none;cursor:pointer;font-size:0.95rem;font-weight:600;color:var(--text-main);text-align:left;">
         <span>📄 배달의민족 데이터 카탈로그 (전체 테이블) — 복사해서 Claude에게 붙여넣기</span>
-        <span class="dict-chevron" style="transition:transform 0.2s;font-size:1.1rem;">▼</span>
+        <span class="dict-chevron" style="transition:transform 0.2s;font-size:1.1rem;transform:rotate(180deg);">▼</span>
       </button>
-      <div class="dict-body" style="display:none;">
+      <div class="dict-body" style="display:block;">
         <div class="prompt-block" style="margin:0;border-radius:0;border:none;border-top:1px solid var(--border);">
           <div class="prompt-header">
             <span class="prompt-label">데이터 카탈로그 MD</span>
@@ -1366,7 +1366,7 @@
     const chevron = btn.querySelector('.dict-chevron');
     const isOpen = body.style.display !== 'none';
     body.style.display = isOpen ? 'none' : 'block';
-    chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+    chevron.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
   }
 
   function copyDictionary(btn) {
