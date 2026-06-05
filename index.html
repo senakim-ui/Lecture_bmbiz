@@ -1068,7 +1068,11 @@
 
     <div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;margin:1rem 0;">
       <button onclick="toggleDict(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;background:var(--bg-card);border:none;cursor:pointer;font-size:0.95rem;font-weight:600;color:var(--text-main);text-align:left;">
-        <span>📄 배달의민족 데이터 카탈로그 (전체 테이블) — 복사해서 Claude에게 붙여넣기</span>
+        <span>
+          <div style="font-size:1rem;font-weight:700;">📄 배달의민족 데이터 카탈로그 (전체 테이블)</div>
+          <div style="font-size:0.85rem;font-weight:400;color:var(--text-muted);margin-top:0.25rem;">자주 쓰는 데이터 스키마와 테이블 그리고 예시 쿼리를 MD로 정리해서 전달해주는 것만으로도 정합성을 많이 높일 수 있다.</div>
+          <div style="font-size:0.82rem;font-weight:600;color:var(--primary);margin-top:0.2rem;">복사해서 사용하기 👇</div>
+        </span>
         <span class="dict-chevron" style="transition:transform 0.2s;font-size:1.1rem;transform:rotate(180deg);">▼</span>
       </button>
       <div class="dict-body" style="display:block;">
