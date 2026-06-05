@@ -880,7 +880,16 @@
     </div>
 
     <h3>📥 데이터는 지속적으로 채워지고 있는가?</h3>
+    <p>다양한 데이터 소스를 AI가 접근할 수 있는 구조로 연결하세요.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin:1rem 0;">
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:0.85rem;text-align:center;">📊<br/><strong>스프레드시트</strong><br/><span style="font-size:0.8em;color:var(--text-muted);">가벼운 기록</span></div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:0.85rem;text-align:center;">🗄️<br/><strong>Trino</strong><br/><span style="font-size:0.8em;color:var(--text-muted);">정형 DB</span></div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:0.85rem;text-align:center;">📝<br/><strong>Confluence</strong><br/><span style="font-size:0.8em;color:var(--text-muted);">팀 위키</span></div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:0.85rem;text-align:center;">💬<br/><strong>Slack</strong><br/><span style="font-size:0.8em;color:var(--text-muted);">대화·결정</span></div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:0.85rem;text-align:center;">📓<br/><strong>Obsidian</strong><br/><span style="font-size:0.8em;color:var(--text-muted);">개인 노트</span></div>
+    </div>
     <ul>
+      <li>🗂️ <strong>아카이빙이 업무 퀄리티를 결정합니다</strong></li>
       <li><strong>나 혼자 보는 곳에 저장하면 AI는 못 씁니다</strong></li>
       <li>구글시트 리포트는 그만 — 위키로 전환하세요</li>
       <li>데이터를 1번 가져오려고 AI를 설계하면 시간 낭비. <strong>데이터가 끊임없이 부어지는 구조</strong>를 만드세요</li>
@@ -929,6 +938,18 @@
         </button>
       </div>
       <div class="prompt-body">30대 여성 1인가구, 퇴근 후 도파민 충전이 필요한 사람. 식사와 술안주를 동시에 원하는 사람의 마케팅 전략을 써줘.</div>
+    </div>
+
+    <h3>🔗 맥락 주는 4가지 방법</h3>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem;margin:1rem 0;">
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1rem;">🔗 <strong>Atlassian/Slack MCP 연동</strong><br/><span style="font-size:0.85em;color:var(--text-muted);">연동으로 먼저 학습 지시</span></div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1rem;">📄 <strong>문서는 MD 형식으로</strong><br/><span style="font-size:0.85em;color:var(--text-muted);">스프레드시트 ❌</span></div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1rem;">🗂️ <strong>예시 쿼리 · 스키마 함께 제공</strong><br/><span style="font-size:0.85em;color:var(--text-muted);">데이터 구조를 알아야 정확히 가져옴</span></div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1rem;">📚 <strong>위키에 적재하며 나만의 맥락 강화</strong><br/><span style="font-size:0.85em;color:var(--text-muted);">쌓일수록 AI 품질이 올라감</span></div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-label">🔗 Atlassian MCP 활용 팁</div>
+      Atlassian MCP를 활용하면 Confluence, Jira 등 최신 문서를 Claude가 직접 읽어 <strong>업무 맥락을 정확하게 이해</strong>합니다. 복수의 최신 문서를 통해 AI가 상황을 파악하게 하세요.
     </div>
 
     <div class="callout info">
