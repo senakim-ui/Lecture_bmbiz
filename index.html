@@ -305,23 +305,80 @@
 
 <nav class="tab-nav">
   <button class="active" onclick="switchTab(0)">
-    <span class="tab-num">1</span>AI는 어떻게 답을 만들까
+    <span class="tab-num">0</span>시작 전 세팅
   </button>
   <button onclick="switchTab(1)">
-    <span class="tab-num">2</span>Claude Code로 데이터 직접 다루기
+    <span class="tab-num">1</span>AI는 어떻게 답을 만들까
   </button>
   <button onclick="switchTab(2)">
-    <span class="tab-num">3</span>AI로 일 잘하는 구조 만들기
+    <span class="tab-num">2</span>Claude Code로 데이터 직접 다루기
   </button>
   <button onclick="switchTab(3)">
+    <span class="tab-num">3</span>AI로 일 잘하는 구조 만들기
+  </button>
+  <button onclick="switchTab(4)">
     <span class="tab-num">4</span>AI 안전하게 쓰기
   </button>
 </nav>
 
 <!-- ═══════════════════════════════════════
+     탭 0 · 시작 전 세팅
+════════════════════════════════════════ -->
+<div class="tab-content active" id="tab-setup">
+
+  <div class="lecture-header">
+    <div class="lecture-meta">강의 시작 전</div>
+    <div class="lecture-title">시작하기 전에 MCP &amp; 커넥터 세팅하기</div>
+    <div class="lecture-sub">Claude를 제대로 활용하려면 외부 서비스 연결이 먼저입니다. 쉬운 것부터 시작하세요.</div>
+  </div>
+
+  <!-- 방법 1: 커넥터 -->
+  <div class="section">
+    <div class="section-title"><span class="step-badge">STEP 1</span> 커넥터 연결 — 지금 당장 할 수 있어요</div>
+    <p style="font-size:0.92rem;color:var(--text-muted);margin:0 0 1rem;">Atlassian, Gmail, Google Drive, Slack 등 클릭 한 번으로 연결. 별도 권한 신청 없이 바로 사용할 수 있습니다.</p>
+    <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:1rem;">
+      <div>
+        <div style="font-size:0.82rem;font-weight:600;color:var(--text-muted);margin-bottom:0.4rem;">① 좌측 하단 프로필 클릭 → <strong>설정</strong> 선택</div>
+        <img src="images/Connector1.png" alt="설정 메뉴 열기" style="width:100%;border-radius:8px;border:1px solid var(--border);">
+      </div>
+      <div>
+        <div style="font-size:0.82rem;font-weight:600;color:var(--text-muted);margin-bottom:0.4rem;">② 설정 화면 → <strong>커넥터</strong> 탭 클릭 → <strong>맞춤 설정</strong> 링크로 이동</div>
+        <img src="images/Connector2.png" alt="커넥터 탭 선택" style="width:100%;border-radius:8px;border:1px solid var(--border);">
+      </div>
+      <div>
+        <div style="font-size:0.82rem;font-weight:600;color:var(--text-muted);margin-bottom:0.4rem;">③ 웹 섹션에서 원하는 서비스 선택 → <strong>연결</strong> 버튼 클릭 → 로그인 인증 → 완료!</div>
+        <img src="images/Connector3.png" alt="커넥터 목록에서 연결" style="width:100%;border-radius:8px;border:1px solid var(--border);">
+      </div>
+    </div>
+    <div style="background:var(--primary-light);border-radius:8px;padding:0.75rem 1rem;font-size:0.88rem;">
+      💡 <strong>공용 Wi-Fi 같은 것</strong> — 누구나 접속 가능한 공식 연결이라 설치가 매우 간단합니다. 연결 후 Claude 채팅창에서 바로 "Confluence에서 ~찾아줘", "Slack에서 ~검색해줘" 사용 가능!
+    </div>
+  </div>
+
+  <!-- 방법 2: MCP Hub -->
+  <div class="section">
+    <div class="section-title"><span class="step-badge">STEP 2</span> 우아한 MCP Hub 연결 — 사내 데이터까지 연결</div>
+    <p style="font-size:0.92rem;color:var(--text-muted);margin:0 0 1rem;">Trino, DataHub 등 우형 내부 시스템에 연결하는 통로. 사내 권한 승인이 필요하지만, 한 번 연결하면 데이터를 자연어로 바로 조회할 수 있습니다.</p>
+    <ol style="margin:0 0 0.8rem 1.2rem;font-size:0.9rem;line-height:1.9;">
+      <li>사내 권한 신청 → IT 승인 대기</li>
+      <li>승인 완료 후 Claude Desktop → 데스크톱 섹션에서 <strong>우아한 MCP Hub</strong> 확인</li>
+      <li>연결 후 "지난달 주문수 데이터 뽑아줘" 같은 요청을 Claude Code에서 바로 실행</li>
+    </ol>
+    <div style="background:#fff8f0;border-radius:8px;padding:0.75rem 1rem;font-size:0.88rem;">
+      🔐 <strong>회사 VPN 같은 것</strong> — 사내 권한이 있어야만 접속 가능한 내부망 연결입니다.
+      &nbsp;|&nbsp;
+      <a href="https://cloud.wiki.woowa.in/wiki/spaces/COMDEV/pages/1150131730/Claude+Desktop" target="_blank" style="color:var(--primary);text-decoration:underline;">연결 가이드 보기</a>
+      &nbsp;|&nbsp;
+      <a href="https://drive.google.com/drive/folders/1dIxxqEAuCKAbky2lzlUnAhaeGEmAiAJr" target="_blank" style="color:var(--primary);text-decoration:underline;">가이드 영상</a>
+    </div>
+  </div>
+
+</div><!-- /tab-setup -->
+
+<!-- ═══════════════════════════════════════
      강의 1 · 이정훈
 ════════════════════════════════════════ -->
-<div class="tab-content active" id="tab-0">
+<div class="tab-content" id="tab-0">
 
   <div class="lecture-header">
     <div class="badge">강의 1</div>
