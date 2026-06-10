@@ -359,17 +359,33 @@
   <div class="section">
     <div class="section-title"><span class="step-badge">STEP 2</span> 우아한 MCP Hub 연결 — 사내 데이터까지 연결</div>
     <p style="font-size:0.92rem;color:var(--text-muted);margin:0 0 1rem;">Trino, DataHub 등 우형 내부 시스템에 연결하는 통로. 사내 권한 승인이 필요하지만, 한 번 연결하면 데이터를 자연어로 바로 조회할 수 있습니다.</p>
-    <ol style="margin:0 0 0.8rem 1.2rem;font-size:0.9rem;line-height:1.9;">
-      <li>사내 권한 신청 → IT 승인 대기</li>
-      <li>승인 완료 후 Claude Desktop → 데스크톱 섹션에서 <strong>우아한 MCP Hub</strong> 확인</li>
-      <li>연결 후 "지난달 주문수 데이터 뽑아줘" 같은 요청을 Claude Code에서 바로 실행</li>
-    </ol>
+    <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:1rem;">
+
+      <div style="border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;">
+        <div style="font-weight:700;margin-bottom:0.5rem;">① MCP Hub 권한 신청</div>
+        <a href="https://auth-admin.baemin.in/projects/336/authority-request" target="_blank" style="display:inline-block;background:var(--primary);color:#fff;border-radius:6px;padding:0.4rem 0.9rem;font-size:0.85rem;text-decoration:none;font-weight:600;margin-bottom:0.75rem;">🔐 MCP Hub 권한 신청하기</a>
+        <img src="images/MCP Authorized.png" alt="MCP Hub 권한 신청 화면" style="width:100%;border-radius:8px;border:1px solid var(--border);">
+      </div>
+
+      <div style="border:2px solid #e65100;border-radius:10px;padding:1rem 1.25rem;background:#fff8f0;">
+        <div style="font-weight:700;margin-bottom:0.4rem;color:#e65100;">⚠️ Trino 사용자는 추가 권한 필수!</div>
+        <p style="font-size:0.9rem;margin:0 0 0.6rem;">데이터 조회(Trino)를 사용하시는 분들은 반드시 <strong>Data Platform 권한</strong>도 별도로 받으셔야 합니다.</p>
+        <a href="https://auth-admin.baemin.in/projects/177/authority-request" target="_blank" style="display:inline-block;background:#e65100;color:#fff;border-radius:6px;padding:0.4rem 0.9rem;font-size:0.85rem;text-decoration:none;font-weight:600;margin-bottom:0.75rem;">🔐 Data Platform 권한 신청하기</a>
+        <img src="images/Dataplatform.png" alt="Data Platform 권한 신청 화면" style="width:100%;border-radius:8px;border:1px solid var(--border);">
+      </div>
+
+      <div style="border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;">
+        <div style="font-weight:700;margin-bottom:0.5rem;">② 승인 완료 후 — MCP Hub 설치</div>
+        <p style="font-size:0.9rem;margin:0 0 0.6rem;">우아한 MCP Hub 자동설치파일 다운 및 설치는 <strong>김동환 | 공통시스템파트</strong>님이 정리해주신 가이드를 참고하세요.</p>
+        <div style="display:flex;gap:0.6rem;flex-wrap:wrap;">
+          <a href="https://cloud.wiki.woowa.in/wiki/spaces/COMDEV/pages/1150131730/Claude+Desktop" target="_blank" style="display:inline-block;background:var(--primary);color:#fff;border-radius:6px;padding:0.4rem 0.9rem;font-size:0.85rem;text-decoration:none;font-weight:600;">📄 설치 가이드 문서</a>
+          <a href="https://drive.google.com/drive/folders/1dIxxqEAuCKAbky2lzlUnAhaeGEmAiAJr" target="_blank" style="display:inline-block;background:var(--bg-card);color:var(--primary);border:1px solid var(--primary);border-radius:6px;padding:0.4rem 0.9rem;font-size:0.85rem;text-decoration:none;font-weight:600;">▶ 설치 영상</a>
+        </div>
+      </div>
+
+    </div>
     <div style="background:#fff8f0;border-radius:8px;padding:0.75rem 1rem;font-size:0.88rem;">
-      🔐 <strong>회사 VPN 같은 것</strong> — 사내 권한이 있어야만 접속 가능한 내부망 연결입니다.
-      &nbsp;|&nbsp;
-      <a href="https://cloud.wiki.woowa.in/wiki/spaces/COMDEV/pages/1150131730/Claude+Desktop" target="_blank" style="color:var(--primary);text-decoration:underline;">연결 가이드 보기</a>
-      &nbsp;|&nbsp;
-      <a href="https://drive.google.com/drive/folders/1dIxxqEAuCKAbky2lzlUnAhaeGEmAiAJr" target="_blank" style="color:var(--primary);text-decoration:underline;">가이드 영상</a>
+      🔐 <strong>회사 VPN 같은 것</strong> — 사내 권한이 있어야만 접속 가능한 내부망 연결입니다. 한 번 연결하면 자연어로 사내 데이터를 바로 조회할 수 있어요.
     </div>
   </div>
 
