@@ -362,7 +362,7 @@
     <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:1rem;">
 
       <div style="border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;">
-        <div style="font-weight:700;margin-bottom:0.5rem;">① MCP Hub 권한 신청</div>
+        <div style="font-weight:700;margin-bottom:0.5rem;">① MCP Hub 권한 신청 <span style="font-size:0.85rem;font-weight:400;color:var(--text-muted);">(보유로 체크된 권한을 신청해 주세요)</span></div>
         <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-bottom:0.75rem;">
           <a href="https://auth-admin.baemin.in/projects/336/authority-request" target="_blank" style="display:inline-block;background:var(--primary);color:#fff;border-radius:6px;padding:0.4rem 0.9rem;font-size:0.85rem;text-decoration:none;font-weight:600;">🔐 MCP Hub 권한 신청하기</a>
           <a href="https://cloud.wiki.woowa.in/wiki/spaces/COMDEV/pages/1012738989/MCPHUB" target="_blank" style="display:inline-block;background:var(--bg-card);color:var(--primary);border:1px solid var(--primary);border-radius:6px;padding:0.4rem 0.9rem;font-size:0.85rem;text-decoration:none;font-weight:600;">📄 권한신청 가이드 보러가기</a>
@@ -372,7 +372,7 @@
 
       <div style="border:2px solid #e65100;border-radius:10px;padding:1rem 1.25rem;background:#fff8f0;">
         <div style="font-weight:700;margin-bottom:0.4rem;color:#e65100;">⚠️ Trino 사용자는 추가 권한 필수!</div>
-        <p style="font-size:0.9rem;margin:0 0 0.6rem;">데이터 조회(Trino)를 사용하시는 분들은 반드시 <strong>Data Platform 권한</strong>도 별도로 받으셔야 합니다. (이미 제플린을 사용하시던 분들은 이미 권한이 있으신거니까 Pass!)</p>
+        <p style="font-size:0.9rem;margin:0 0 0.6rem;">데이터 조회(Trino)를 사용하시는 분들은 반드시 <strong>Data Platform 권한</strong>도 별도로 받으셔야 합니다. (이미 제플린을 사용하시던 분들은 이미 권한이 있으신거니까 Pass!)<br><span style="font-size:0.88rem;">권한유형을 살펴보시고, 필요한 데이터의 권한을 신청해주세요 → <a href="https://wiki.woowa.in/pages/viewpage.action?pageId=577224915" target="_blank" style="color:#e65100;text-decoration:underline;font-weight:600;">권한유형 안내 보기</a></span></p>
         <a href="https://auth-admin.baemin.in/projects/177/authority-request" target="_blank" style="display:inline-block;background:#e65100;color:#fff;border-radius:6px;padding:0.4rem 0.9rem;font-size:0.85rem;text-decoration:none;font-weight:600;margin-bottom:0.75rem;">🔐 Data Platform 권한 신청하기</a>
         <img src="images/Dataplatform.png" alt="Data Platform 권한 신청 화면" style="width:100%;border-radius:8px;border:1px solid var(--border);">
       </div>
@@ -380,10 +380,12 @@
       <div style="border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;">
         <div style="font-weight:700;margin-bottom:0.5rem;">② 승인 완료 후 — MCP Hub 설치</div>
         <p style="font-size:0.9rem;margin:0 0 0.6rem;">우아한 MCP Hub 자동설치파일 다운 및 설치는 <strong>김동환 | 공통시스템파트</strong>님이 정리해주신 가이드를 참고하세요.</p>
-        <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-bottom:0;">
+        <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-bottom:0.75rem;">
           <a href="https://cloud.wiki.woowa.in/wiki/spaces/COMDEV/pages/1150131730/Claude+Desktop" target="_blank" style="display:inline-block;background:var(--primary);color:#fff;border-radius:6px;padding:0.4rem 0.9rem;font-size:0.85rem;text-decoration:none;font-weight:600;">📄 설치 파일 &amp; 가이드가 있는 위키</a>
           <a href="https://drive.google.com/drive/folders/1dIxxqEAuCKAbky2lzlUnAhaeGEmAiAJr" target="_blank" style="display:inline-block;background:var(--bg-card);color:var(--primary);border:1px solid var(--primary);border-radius:6px;padding:0.4rem 0.9rem;font-size:0.85rem;text-decoration:none;font-weight:600;">▶ 설치 영상</a>
         </div>
+        <p style="font-size:0.88rem;color:var(--text-muted);margin:0 0 0.5rem;">📌 첨부파일은 바로 요기 있어요. 지나치지 마세요.</p>
+        <img src="images/pinforfile.png" alt="첨부파일 위치" style="width:100%;border-radius:8px;border:1px solid var(--border);">
       </div>
 
       <div style="border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;">
@@ -408,7 +410,7 @@
 
     <!-- Atlassian 커넥터 안 될 때 -->
     <div style="border:2px dashed #f59e0b;border-radius:12px;padding:1.25rem 1.5rem;background:#fffbeb;">
-      <div style="font-size:1rem;font-weight:700;color:#92400e;margin-bottom:0.75rem;">⚠️ 커넥터로 Jira·Wiki(Atlassian) 연결이 안 된다면?</div>
+      <div style="font-size:1rem;font-weight:700;color:#92400e;margin-bottom:0.75rem;">⚠️ 커넥터로 Jira·Wiki(Atlassian) 연결이 안 되어서 설치된 MCP Hub로 연결해야 한다면?<br><span style="font-weight:400;font-size:0.92rem;">혹은 My Space에 추가하려고 하는데, <strong>"사용자 'OOO'에게 필수 환경 변수가 없습니다"</strong> 라고 화면에 뜬다면 이렇게 해보세요.</span></div>
       <p style="font-size:0.9rem;margin:0 0 0.75rem;">API 토큰을 직접 생성해서 MCP Hub에 입력하면 해결됩니다.</p>
       <div style="font-size:0.9rem;line-height:2;">
         <div style="margin-bottom:0.25rem;"><span style="font-weight:600;">1.</span> <a href="https://id.atlassian.com/step-up/start?continue=https%3A%2F%2Fid.atlassian.com%2Fmanage-profile%2Fsecurity%2Fapi-tokens#sent" target="_blank" style="color:var(--primary);text-decoration:underline;font-weight:600;">Atlassian API 토큰 생성 페이지</a>에서 토큰 생성 &amp; 복사</div>
